@@ -21,7 +21,7 @@ with DAG(
         import random
 
         item_lst = ['A','B','C']
-        select_item = random.chioce(item_lst)
+        select_item = random.choice(item_lst)
         if select_item == 'A':
             return 'task_a'
         elif select_item in ['B','C']:
@@ -33,7 +33,7 @@ with DAG(
         python_callable=select_random
     )
     
-    
+
     def common_func(**kwargs):
         print(kwargs['selected'])
 
