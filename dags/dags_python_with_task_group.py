@@ -11,7 +11,7 @@ from airflow.utils.task_group import TaskGroup
 
 
 with DAG(
-    dag_id="dags_base_branch_operator",
+    dag_id="dags_python_with_task_group",
     schedule="10 0 * * *",
     start_date=pendulum.datetime(2023, 1, 1, tz="Asia/Seoul"),
     catchup=False,
